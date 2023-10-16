@@ -19,6 +19,11 @@
   transition: transform 0.2s; /* Add a transition effect for transform property */
 }
 
+.catalog a {
+    text-decoration: none; /* Remove text decoration (usually underlines) */
+    color: inherit; /* Optionally, inherit the text color from the parent element */
+  }
+
 .catalog .item:hover {
   transform: scale(1.05); /* Increase the size on hover */
   cursor: pointer;
