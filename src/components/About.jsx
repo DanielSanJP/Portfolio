@@ -140,13 +140,13 @@ const About = () => {
         </div>
       </div>
       <div className="about-soft-skills">
-        <h2>Soft Skills & Values</h2>
-        <ul className="soft-skills-list">
+        <h2>Skills & Values</h2>
+        <div className="soft-skills-list">
           <li>Communication</li>
           <li>Problem-Solving</li>
           <li>Team Collaboration</li>
           <li>Adaptability</li>
-        </ul>
+        </div>
       </div>
     </div>
   );

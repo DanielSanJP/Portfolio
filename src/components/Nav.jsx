@@ -5,10 +5,10 @@ import "../styles/App.css";
 const Nav = () => {
   return (
     <nav className="navbar">
-      <ul className="nav-links">
-        <li className="logo">
-          <Link to="/">MyPortfolio</Link>
-        </li>
+      <li className="logo">
+        <Link to="/">MyPortfolio</Link>
+      </li>
+      <div className="nav-links">
         <li>
           <Link to="/about">About</Link>
         </li>
@@ -18,7 +18,7 @@ const Nav = () => {
         <li>
           <Link to="/contact">Contact</Link>
         </li>
-      </ul>
+      </div>
     </nav>
   );
 };
