@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../styles/Home.css";
 import Nav from "./Nav";
 
@@ -13,15 +14,15 @@ const Home = () => {
           <h1>Daniel Medcalf – Full Stack Developer</h1>
           <p>Building innovative and scalable web applications</p>
           <div className="cta-buttons">
-            <a href="/about" className="btn">
+            <Link to="/about" className="btn">
               About Me
-            </a>
-            <a href="/portfolio" className="btn">
+            </Link>
+            <Link to="/portfolio" className="btn">
               View Portfolio
-            </a>
-            <a href="/contact" className="btn">
+            </Link>
+            <Link to="/contact" className="btn">
               Contact Me
-            </a>
+            </Link>
           </div>
         </div>
       </section>
