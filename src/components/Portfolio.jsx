@@ -8,7 +8,7 @@ const projects = [
     title: "Project One",
     description: "A brief description of Project One.",
     techStack: ["React", "CSS", "JavaScript"],
-    liveDemo: "https://example.com/project-one",
+    liveDemo: "https://social-app-rho-rosy.vercel.app",
     github: "https://github.com/example/project-one",
   },
   {
