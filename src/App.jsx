@@ -4,7 +4,7 @@ import Home from "./components/Home";
 import Nav from "./components/Nav";
 import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
-import "./styles/app.css";
+import "./styles/App.css";
 
 function App() {
   return (
