@@ -1,9 +1,6 @@
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  background-color: #2c2c2c;
-  color: #fff;
+.home {
+  display: flex;
+  justify-content: center;
 }
 
 .hero {
@@ -15,6 +12,13 @@ body {
   height: 100vh;
   color: #fff;
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  width: 350px;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .hero h1 {
@@ -27,6 +31,14 @@ body {
   font-size: 1.2rem;
   margin-bottom: 2rem;
   color: #51a1fd;
+}
+
+.cta-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 350px;
+  max-width: 75vw;
 }
 
 .cta-buttons .btn {

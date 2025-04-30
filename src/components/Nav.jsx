@@ -5,10 +5,10 @@ import "../styles/App.css";
 const Nav = () => {
   return (
     <nav className="navbar">
-      <div className="logo">
-        <Link to="/">MyPortfolio</Link>
-      </div>
       <ul className="nav-links">
+        <li className="logo">
+          <Link to="/">MyPortfolio</Link>
+        </li>
         <li>
           <Link to="/about">About</Link>
         </li>

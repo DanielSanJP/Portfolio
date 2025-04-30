@@ -63,8 +63,6 @@ button:hover {
   background: linear-gradient(to right, #1769aa, #008394);
 }
 
-/* Moved navbar styles from Home.css to App.css */
-
 .navbar {
   display: flex;
   justify-content: space-between;

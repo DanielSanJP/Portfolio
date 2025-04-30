@@ -4,6 +4,8 @@
   color: #fff;
   width: 80%;
   margin: auto;
+  gap: 20px;
+  padding: 40px;
 }
 
 .about-profile {
@@ -49,15 +51,28 @@
   word-wrap: break-word;
 }
 
-.about-skills,
-.about-soft-skills {
-  margin-bottom: 20px;
+.about-skills {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 20px;
 }
 
-.skills-list,
+.about-soft-skills {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 40px 0px 40px 20px;
+  margin: auto;
+  flex-wrap: nowrap;
+  text-align: center;
+  width: 350px;
+  max-width: 800px;
+}
+
 .soft-skills-list {
-  list-style-type: none;
-  padding: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .skills-list li,
@@ -78,10 +93,10 @@
 }
 
 .skills-badges {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 20px;
-  padding: 15px;
+  display: flex;
+  flex-wrap: wrap; /* Allows items to wrap onto the next line */
+  justify-content: center; /* Centers items horizontally */
+  gap: 20px; /* Adds spacing between items */
 }
 
 .skill-card {
