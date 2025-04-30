@@ -4,12 +4,12 @@ import "../styles/Portfolio.css";
 const projects = [
   {
     id: 1,
-    image: "/DogPicture.png",
-    title: "Project One",
-    description: "A brief description of Project One.",
+    image: "/socialapplogo.png",
+    title: "Social App",
+    description: "My attempt at building a social media app.",
     techStack: ["React", "CSS", "JavaScript"],
     liveDemo: "https://social-app-rho-rosy.vercel.app",
-    github: "https://github.com/example/project-one",
+    github: "https://github.com/DanielSanJP/Social-App",
   },
   {
     id: 2,
