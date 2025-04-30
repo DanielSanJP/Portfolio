@@ -12,7 +12,7 @@ const Home = () => {
       <section className="hero">
         <div className="hero-content">
           <h1>Daniel Medcalf – Full Stack Developer</h1>
-          <p>Building innovative and scalable web applications</p>
+          <p>Building creative and scalable web applications</p>
           <div className="cta-buttons">
             <Link to="/about" className="btn">
               About Me

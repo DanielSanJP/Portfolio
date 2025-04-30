@@ -7,7 +7,7 @@ const projects = [
     image: "/socialapplogo.png",
     title: "Social App",
     description: "My attempt at building a social media app.",
-    techStack: ["React", "CSS", "JavaScript"],
+    techStack: ["React", "CSS", "JavaScript", "Supabase", "Vercel", "Railway"],
     liveDemo: "https://social-app-rho-rosy.vercel.app",
     github: "https://github.com/DanielSanJP/Social-App",
   },
