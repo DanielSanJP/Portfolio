@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../styles/Portfolio.css";
 
 const projects = [
@@ -33,6 +33,19 @@ const Portfolio = () => {
     setSelectedProject(null);
   };
 
+  useEffect(() => {
+    const handleKeyDown = (event) => {
+      if (event.key === "Escape") {
+        closeModal();
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+    };
+  }, []);
+
   return (
     <div className="portfolio">
       <h2>My Portfolio</h2>
@@ -48,8 +61,8 @@ const Portfolio = () => {
       </div>
 
       {selectedProject && (
-        <div className="modal">
-          <div className="modal-content">
+        <div className="modal" onClick={closeModal}>
+          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
             <span className="close" onClick={closeModal}>
               &times;
             </span>
