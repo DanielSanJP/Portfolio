@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import "../styles/Portfolio.css";
 
 const projects = [
@@ -8,7 +8,7 @@ const projects = [
     title: "Social App",
     description: "My attempt at building a social media app.",
     techStack: ["React", "CSS", "JavaScript", "Supabase", "Vercel", "Railway"],
-    liveDemo: "https://social-app-rho-rosy.vercel.app",
+    liveDemo: "https://social-app-omega-pied.vercel.app/",
     github: "https://github.com/DanielSanJP/Social-App",
   },
   {

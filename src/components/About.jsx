@@ -1,4 +1,3 @@
-import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faReact,
@@ -9,7 +8,7 @@ import {
   faHtml5,
   faFigma,
 } from "@fortawesome/free-brands-svg-icons";
-import { faDatabase } from "@fortawesome/free-solid-svg-icons";
+// import { faDatabase } from "@fortawesome/free-solid-svg-icons";
 import {
   SiMongodb,
   SiPostgresql,
@@ -30,7 +29,7 @@ const About = () => {
         <div className="bio-cards">
           <div className="bio-card">
             <p className="bio">
-              Hi, I'm Daniel Medcalf, a 20-year-old software developer from
+              Hi, I am Daniel Medcalf, a 20-year-old software developer from
               Japan, currently pursuing a degree in Software Development at Toi
               Ohomai. My journey into technology began during my time at Mount
               Maunganui College, where I developed a strong foundation in
