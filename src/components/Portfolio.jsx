@@ -6,7 +6,7 @@ import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
 const projects = [
   {
     id: 1,
-    image: "/socialapplogo.png",
+    image: "/Social-App-Thumbnail.png",
     title: "Social App",
     description: "My attempt at building a social media app.",
     techStack: ["React", "CSS", "JavaScript", "Supabase", "Vercel", "Railway"],
@@ -15,7 +15,7 @@ const projects = [
   },
   {
     id: 2,
-    image: "/aquarium.png",
+    image: "/Life-Catalogue-Thumbnail.png",
     title: "Life Catalogue",
     description: "A website for selling and managing aquarium fish ",
     techStack: ["React", "CSS", "JavaScript", "Supabase", "Vercel"],
