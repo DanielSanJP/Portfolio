@@ -29,10 +29,11 @@
 }
 
 .bio-card {
-  background: #2c2c2c;
+  background: var(--color-card);
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--color-border);
+  box-shadow: 0 4px 6px var(--color-shadow);
   transition: transform 0.3s, box-shadow 0.3s;
   width: 70%;
   margin: auto;
@@ -40,113 +41,14 @@
 
 .bio-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 6px 10px var(--color-shadow);
   cursor: pointer;
 }
 
 .bio {
   font-size: 16px;
   line-height: 1.6;
-  color: #fff;
+  color: var(--color-text);
   max-width: 90vw;
   word-wrap: break-word;
-}
-
-.about-skills {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  gap: 20px;
-  width: 80%;
-  margin: auto;
-}
-
-.about-soft-skills {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  gap: 20px;
-  width: 100%;
-  margin: auto;
-}
-
-.soft-skills-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px; /* Adds spacing between items */
-  list-style: none;
-  margin: auto;
-  text-align: center;
-  min-width: 350px;
-}
-
-.skills-list li,
-.soft-skills-list li {
-  background: #2c2c2c;
-  color: #ffffff;
-  padding: 10px;
-  border-radius: 5px;
-  transition: background-color 0.3s;
-}
-
-.skills-list li:hover,
-.soft-skills-list li:hover {
-  cursor: pointer;
-  transform: translateY(-2px);
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.skills-badges {
-  display: flex;
-  flex-wrap: wrap; /* Allows items to wrap onto the next line */
-  justify-content: center; /* Centers items horizontally */
-  gap: 20px; /* Adds spacing between items */
-}
-
-.skill-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: #2c2c2c;
-  padding: 20px;
-  border-radius: 15px;
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
-  transition: transform 0.3s, box-shadow 0.3s;
-  width: 150px;
-  height: 150px;
-}
-
-.skill-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.25);
-  cursor: pointer;
-}
-
-.skill-badge {
-  font-size: 60px;
-  margin-bottom: 10px;
-  color: #51a1fd; /* Set icon color to the previous blue */
-  transition: color 0.3s;
-}
-
-.skill-badge:hover {
-  color: #51a1fd; /* Slightly darker blue on hover */
-}
-
-.skill-title {
-  font-size: 18px;
-  color: #fff;
-  text-align: center;
-  font-weight: bold;
-}
-
-@media (max-width: 520px) {
-  .about-skills {
-    width: 100%;
-  }
-  .skill-card {
-    width: 125px;
-    height: 125px;
-  }
 }

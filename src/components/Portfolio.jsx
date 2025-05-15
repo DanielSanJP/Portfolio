@@ -1,5 +1,7 @@
-import { useState, useEffect } from "react";
 import "../styles/Portfolio.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
 
 const projects = [
   {
@@ -14,7 +16,16 @@ const projects = [
   {
     id: 2,
     image: "/src/assets/react.svg",
-    title: "Project Two",
+    title: "Project 2",
+    description: "A brief description of Project Two.",
+    techStack: ["React", "Node.js", "MongoDB"],
+    liveDemo: "https://example.com/project-two",
+    github: "https://github.com/example/project-two",
+  },
+  {
+    id: 3,
+    image: "/src/assets/react.svg",
+    title: "Project 3",
     description: "A brief description of Project Two.",
     techStack: ["React", "Node.js", "MongoDB"],
     liveDemo: "https://example.com/project-two",
@@ -23,76 +34,57 @@ const projects = [
 ];
 
 const Portfolio = () => {
-  const [selectedProject, setSelectedProject] = useState(null);
-
-  const openModal = (project) => {
-    setSelectedProject(project);
-  };
-
-  const closeModal = () => {
-    setSelectedProject(null);
-  };
-
-  useEffect(() => {
-    const handleKeyDown = (event) => {
-      if (event.key === "Escape") {
-        closeModal();
-      }
-    };
-
-    window.addEventListener("keydown", handleKeyDown);
-    return () => {
-      window.removeEventListener("keydown", handleKeyDown);
-    };
-  }, []);
-
   return (
-    <div className="portfolio">
-      <h2>My Portfolio</h2>
+    <div className="portfolio" id="portfolio">
+      <h2>Featured Projects</h2>
+      <p className="portfolio-subtitle">
+        Here are some of my recent projects. Each project was carefully crafted
+        with attention to detail, performance, and user experience.
+      </p>
+
       <div className="portfolio-grid">
         {projects.map((project) => (
           <div key={project.id} className="project-card">
-            <img src={project.image} alt={project.title} />
-            <h3>{project.title}</h3>
-            <p>{project.description}</p>
-            <button onClick={() => openModal(project)}>Learn More</button>
+            <div className="project-image-container">
+              <img src={project.image} alt={project.title} />
+            </div>
+            <div className="project-content">
+              <div className="project-tech-stack">
+                {project.techStack.map((tech, index) => (
+                  <span key={index} className="tech-tag">
+                    {tech}
+                  </span>
+                ))}
+                <div>
+                  <h3>{project.title}</h3>
+                  <p className="project-description">{project.description}</p>
+                </div>
+              </div>
+
+              <div className="project-links">
+                <a
+                  href={project.liveDemo}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="project-link"
+                >
+                  <FontAwesomeIcon icon={faExternalLinkAlt} />
+                  <span>Live Demo</span>
+                </a>
+                <a
+                  href={project.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="project-link"
+                >
+                  <FontAwesomeIcon icon={faGithub} />
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </div>
           </div>
         ))}
       </div>
-
-      {selectedProject && (
-        <div className="modal" onClick={closeModal}>
-          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-            <span className="close" onClick={closeModal}>
-              &times;
-            </span>
-            <h2>{selectedProject.title}</h2>
-            <p>{selectedProject.description}</p>
-            <h4>Tech Stack:</h4>
-            <ul>
-              {selectedProject.techStack.map((tech, index) => (
-                <li key={index}>{tech}</li>
-              ))}
-            </ul>
-            <div className="modal-links">
-              <a
-                href={selectedProject.liveDemo}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Live Demo
-              </a>
-              <a
-                href={selectedProject.github}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                GitHub
-              </a>
-            </div>
-          </div>
-        </div>
-      )}
     </div>
   );
 };

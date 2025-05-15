@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import "../styles/Home.css";
 
 const Home = () => {
@@ -7,21 +6,14 @@ const Home = () => {
       {/* Top Navigation Bar */}
 
       {/* Hero Section */}
-      <section className="hero">
+      <section className="hero" id="home">
         <div className="hero-content">
-          <h1>Daniel Medcalf</h1>
-          <h1>Full Stack Developer</h1>
+          <h1>Hi I am Daniel Medcalf</h1>
           <p>Building creative and scalable web applications</p>
           <div className="cta-buttons">
-            <Link to="/about" className="btn">
-              About Me
-            </Link>
-            <Link to="/portfolio" className="btn">
-              View Portfolio
-            </Link>
-            <Link to="/contact" className="btn">
-              Contact Me
-            </Link>
+            <a href="#portfolio" className="btn">
+              View my Work
+            </a>
           </div>
         </div>
       </section>

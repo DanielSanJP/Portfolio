@@ -1,43 +1,43 @@
 import "../styles/Contact.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 
 const Contact = () => {
   return (
-    <div className="contact">
+    <div className="contact" id="contact">
       <section className="contact-section">
         <h2>Contact Me</h2>
-        <form className="contact-form">
-          <label htmlFor="name">Name:</label>
-          <input type="text" id="name" name="name" required />
-
-          <label htmlFor="email">Email:</label>
-          <input type="email" id="email" name="email" required />
-
-          <label htmlFor="message">Message:</label>
-          <textarea id="message" name="message" rows="5" required></textarea>
-
-          <button type="submit">Send</button>
-        </form>
-
         <div className="social-links">
           <a
             href="https://linkedin.com"
             target="_blank"
             rel="noopener noreferrer"
+            className="social-link"
           >
-            LinkedIn
+            <FontAwesomeIcon icon={faLinkedin} className="social-icon" />
+            <span>LinkedIn</span>
           </a>
           <a
             href="https://github.com/DanielSanJP"
             target="_blank"
             rel="noopener noreferrer"
+            className="social-link"
           >
-            GitHub
+            <FontAwesomeIcon icon={faGithub} className="social-icon" />
+            <span>GitHub</span>
           </a>
         </div>
 
         <div className="contact-info">
-          <p>Email: daniel.m514@outlook.com</p>
-          <p>Phone: (021) 815415</p>
+          <a href="mailto:daniel.m514@outlook.com" className="contact-item">
+            <FontAwesomeIcon icon={faEnvelope} className="contact-icon" />
+            <span>daniel.m514@outlook.com</span>
+          </a>
+          <a href="tel:+021815415" className="contact-item">
+            <FontAwesomeIcon icon={faPhone} className="contact-icon" />
+            <span>(021) 815415</span>
+          </a>
         </div>
       </section>
     </div>

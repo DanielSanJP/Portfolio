@@ -1,0 +1,88 @@
+/* Global styles */
+:root {
+  --color-bg: #0f172a;
+  --color-bg-alt: #1e293b;
+  --color-text: #f8fafc;
+  --color-text-alt: #cbd5e1;
+  --color-accent: #4e80d8;
+  --color-accent-hover: #123e9e;
+  --color-card: #0e121a;
+  --color-border: #334155;
+  --color-shadow: rgba(0, 0, 0, 0.25);
+  --color-success: #10b981;
+  --color-warning: #f59e0b;
+  --color-error: #ef4444;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: black;
+  color: var(--color-text);
+  box-sizing: border-box;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  padding-top: 70px; /* Add padding to account for fixed navbar */
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Header styles */
+header {
+  background-color: var(--color-bg-alt);
+  color: var(--color-text);
+  padding: 10px 20px;
+  text-align: center;
+  border-bottom: 1px solid var(--color-border);
+}
+
+a,
+.accent {
+  color: var(--color-accent);
+}
+
+a:hover,
+.accent:hover {
+  color: var(--color-accent-hover);
+}
+
+.card,
+.bio-card,
+.skill-card {
+  background: var(--color-card);
+  border: 1px solid var(--color-border);
+  color: var(--color-text-alt);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color-text);
+}
+
+/* Footer styles */
+footer {
+  background-color: var(--color-bg-alt);
+  color: var(--color-text);
+  text-align: center;
+  padding: 10px 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid var(--color-border);
+}
+
+[id] {
+  scroll-margin-top: 50px; /* Adjusted to account for fixed navbar height */
+}
+
+@media (max-width: 768px) {
+  [id] {
+    scroll-margin-top: 70px; /* Mobile navbar height adjustment */
+  }
+}
