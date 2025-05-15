@@ -15,12 +15,12 @@ const projects = [
   },
   {
     id: 2,
-    image: "/src/assets/react.svg",
-    title: "Project 2",
-    description: "A brief description of Project Two.",
-    techStack: ["React", "Node.js", "MongoDB"],
-    liveDemo: "https://example.com/project-two",
-    github: "https://github.com/example/project-two",
+    image: "/aquarium.png",
+    title: "Life Catalogue",
+    description: "A website for selling and managing aquarium fish ",
+    techStack: ["React", "CSS", "JavaScript", "Supabase", "Vercel"],
+    liveDemo: "https://life-catalogue.vercel.app/",
+    github: "https://github.com/DanielSanJP/Life-Catalogue",
   },
   {
     id: 3,
