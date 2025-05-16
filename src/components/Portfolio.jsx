@@ -24,12 +24,12 @@ const projects = [
   },
   {
     id: 3,
-    image: "/src/assets/react.svg",
+    image: "/Service-Canvas-Thumbnail.png",
     title: "Project 3",
-    description: "A brief description of Project Two.",
-    techStack: ["React", "Node.js", "MongoDB"],
-    liveDemo: "https://example.com/project-two",
-    github: "https://github.com/example/project-two",
+    description: "A template website for any service company.",
+    techStack: ["React", "CSS", "JavaScript", "Vercel"],
+    liveDemo: "https://service-canvas.vercel.app/",
+    github: "https://github.com/DanielSanJP/Service-Canvas",
   },
 ];
 
