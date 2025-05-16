@@ -25,7 +25,7 @@ const projects = [
   {
     id: 3,
     image: "/Service-Canvas-Thumbnail.png",
-    title: "Project 3",
+    title: "Service Canvas",
     description: "A template website for any service company.",
     techStack: ["React", "CSS", "JavaScript", "Vercel"],
     liveDemo: "https://service-canvas.vercel.app/",
