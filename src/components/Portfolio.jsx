@@ -9,7 +9,7 @@ const projects = [
     image: "/Social-App-Thumbnail.png",
     title: "Social App",
     description: "My attempt at building a social media app.",
-    techStack: ["React", "CSS", "JavaScript", "Supabase", "Vercel", "Railway"],
+    techStack: ["React", "CSS", "JavaScript"],
     liveDemo: "https://social-app-omega-pied.vercel.app/",
     github: "https://github.com/DanielSanJP/Social-App",
   },
@@ -18,7 +18,7 @@ const projects = [
     image: "/Life-Catalogue-Thumbnail.png",
     title: "Life Catalogue",
     description: "A website for selling and managing aquarium fish ",
-    techStack: ["React", "CSS", "JavaScript", "Supabase", "Vercel"],
+    techStack: ["React", "CSS", "JavaScript"],
     liveDemo: "https://life-catalogue.vercel.app/",
     github: "https://github.com/DanielSanJP/Life-Catalogue",
   },
@@ -27,9 +27,19 @@ const projects = [
     image: "/Service-Canvas-Thumbnail.png",
     title: "Service Canvas",
     description: "A template website for any service company.",
-    techStack: ["React", "CSS", "JavaScript", "Vercel"],
+    techStack: ["React", "CSS", "JavaScript"],
     liveDemo: "https://service-canvas.vercel.app/",
     github: "https://github.com/DanielSanJP/Service-Canvas",
+  },
+  {
+    id: 4,
+    image: "/Simple-Weather-Thumbnail.png",
+    title: "Simple Weather",
+    description:
+      "Simple weather app displaying current weather and forecast based on location or searched location.",
+    techStack: ["React", "CSS", "JavaScript"],
+    liveDemo: "https://simple-weather-one.vercel.app/",
+    github: "https://github.com/DanielSanJP/Simple-Weather",
   },
 ];
 
