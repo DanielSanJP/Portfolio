@@ -14,7 +14,7 @@
   margin-bottom: 20px;
 }
 .profile-picture {
-  width: 100px; /* Ensures the image fills the container */
+  width: 300px; /* Ensures the image fills the container */
   height: auto; /* Ensures the image fills the container */
   border-radius: 50%;
   border: white 2px solid;
