@@ -24,12 +24,12 @@ const projects = [
   },
   {
     id: 3,
-    image: "/Service-Canvas-Thumbnail.png",
-    title: "Service Canvas",
-    description: "A template website for any service company.",
+    image: "/Akimbo_Painting_Thumbnail.png",
+    title: "Akimbo Painting",
+    description: "A website for Akimbo Painting.",
     techStack: ["React", "CSS", "JavaScript"],
-    liveDemo: "https://service-canvas.vercel.app/",
-    github: "https://github.com/DanielSanJP/Service-Canvas",
+    liveDemo: "https://akimbo-painting.vercel.app/",
+    github: "https://github.com/DanielSanJP/AkimboPainting",
   },
   {
     id: 4,
