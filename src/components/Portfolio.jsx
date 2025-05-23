@@ -41,6 +41,16 @@ const projects = [
     liveDemo: "https://simple-weather-one.vercel.app/",
     github: "https://github.com/DanielSanJP/Simple-Weather",
   },
+  {
+    id: 4,
+    image: "/Project_Notes_Thumbnail.png",
+    title: "Project Notes",
+    description:
+      "A simple note-taking app for managing your projects and tasks.",
+    techStack: ["React", "CSS", "JavaScript"],
+    liveDemo: "https://project-notes-one.vercel.app/",
+    github: "https://github.com/DanielSanJP/ProjectNotes",
+  },
 ];
 
 const Portfolio = () => {
